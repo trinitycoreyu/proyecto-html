@@ -1,0 +1,170 @@
+<!--Bievenido a este tutorial en español, de HTML 5, donde plasmare todo el conocimiento 
+    adquirido en W3School y complementare con html avanzado y libros de desarrollo del tema, 
+    encuentrame en Facebook como Mj Dancerot. Att: Programador Autodidacta Trinity.
+    ________          __            __    __               
+|        \        |  \          |  \  |  \              
+ \$$$$$$$$______   \$$ _______   \$$ _| $$_    __    __ 
+   | $$  /      \ |  \|       \ |  \|   $$ \  |  \  |  \
+   | $$ |  $$$$$$\| $$| $$$$$$$\| $$ \$$$$$$  | $$  | $$
+   | $$ | $$   \$$| $$| $$  | $$| $$  | $$ __ | $$  | $$
+   | $$ | $$      | $$| $$  | $$| $$  | $$|  \| $$__/ $$
+   | $$ | $$      | $$| $$  | $$| $$   \$$  $$ \$$    $$
+    \$$  \$$       \$$ \$$   \$$ \$$    \$$$$  _\$$$$$$$
+                                              |  \__| $$
+                                               \$$    $$
+                                                \$$$$$$ 
+                                            
+Basicamente este tutorial sera explicado mediante comentarios en cada etiqueta sus usos, significado,
+etcs.-->
+
+<!DOCTYPE html> <!-- La declaración define este documento como HTML5
+La <!DOCTYPE>declaración representa el tipo de documento y ayuda a los navegadores a mostrar 
+las páginas web correctamente.
+
+Solo debe aparecer una vez, en la parte superior de la página (antes de las etiquetas HTML).
+
+La <!DOCTYPE>declaración no distingue entre mayúsculas y minúsculas.
+Todos los documentos HTML deben comenzar con una declaración de tipo de documento: <!DOCTYPE html>.-->
+<html> <!-- es el elemento raíz de una página HTML.
+El documento HTML en sí comienza <html>y termina con </html>.-->
+    <head> <!--elemento contiene metainformación sobre el documento. El <head>elemento HTML es un 
+        contenedor de metadatos. Los metadatos HTML son datos sobre el documento HTML. 
+        Los metadatos no se muestran.
+        El <head>elemento se coloca entre la <html>etiqueta y la <body>etiqueta:
+            Nota: Los metadatos generalmente definen el título del documento,
+             el conjunto de caracteres, los estilos, los scripts y otra información meta.-->
+            <meta charset="UTF-8">
+            <title>Proyecto HTML</title> <!--elemento especifica un título para el documento-->
+            <meta name="description" content="Proyecto HTML by trinity"> <!--Defina una descripción de su página web::-->
+            <meta name="keywords" content="HTML, CSS, XML, JavaScript"><!--Definir palabras clave para motores de búsqueda:-->
+            <meta name="author" content="Fernando Orellana Rojas"><!--Definir el autor de una página:-->
+            <meta http-equiv="refresh" content="1000"><!--Actualizar documento cada 360 segundos:-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--usado para paginas responsivas.
+                HTML5 introdujo un método para permitir a los diseñadores web tomar el control de la ventana gráfica, a través de la <meta>etiqueta.
+
+            La ventana gráfica es el área visible del usuario de una página web. Varía según el dispositivo y será más pequeño en un teléfono móvil que en la pantalla de una computadora.
+            
+            Debe incluir el siguiente <meta>elemento de ventana gráfica en todas sus páginas web:
+        Un <meta>elemento de ventana gráfica proporciona al navegador instrucciones sobre cómo controlar las dimensiones y la escala de la página.
+
+La parte ancho = ancho del dispositivo establece el ancho de la página para seguir el ancho de la pantalla del dispositivo (que variará según el dispositivo).
+
+La parte initial-scale = 1.0 establece el nivel de zoom inicial cuando el navegador carga por primera vez la página.
+
+-->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+<!--vinculando un archivo externo de estilo solo utilizaso para dar enfasis al h2 con la clase enfasisTitulo de los titulos principales-->
+
+
+
+        </head>
+
+    <body>
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">esta es otra pagina</h2><!--+++++++Titulo seccion+++++++-->
+
+
+  <!--MARCADOR DE SALTOS--> <!--Los marcadores HTML se utilizan para permitir a los lectores saltar a partes específicas de una página web.
+
+Los marcadores pueden ser útiles si una página web es muy larga.
+
+Para crear un marcador: primero cree el marcador y luego agregue un enlace.
+
+Cuando se hace clic en el enlace, la página se desplazará hacia abajo o hacia arriba a la ubicación con el marcador.-->
+<section style="background-color:black; width:100%; color: white;">
+<p><a href="#C4" style="color: magenta; font-weight: ">Jump to Chapter 4</a></p>
+<p><a href="#C10" style="color: magenta; font-weight: bold;">Jump to Chapter 10</a></p>
+<p><a href="#salto17" style="color: magenta; font-weight: bold;">Jump to Chapter 17</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4" >Chapter 4</h2>
+<p style="color: magenta; font-weight; font-size: 200%;">ESTA ES OTRA PAGINA</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p style="color: magenta; font-weight;">This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="salto17">Chapter 17</h2>
+<p style="color: magenta; font-weight;">This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+<h2>Chapter 24</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 25</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 27</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 28</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 29</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 30</h2>
+<p>This chapter explains ba bla bla</p>
+
+<mark>Volver a la pagina html.html <a href="html.html#C4">Jump to Chapter 4</a> </mark>
+</section>
+
+  
+</body>
+
+</html>

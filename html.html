@@ -1,0 +1,1876 @@
+<!--Bievenido a este tutorial en español, de HTML 5, donde plasmare todo el conocimiento 
+    adquirido en W3School y complementare con html avanzado y libros de desarrollo del tema, 
+    encuentrame en Facebook como Mj Dancerot. Att: Programador Autodidacta Trinity.
+    ________          __            __    __               
+|        \        |  \          |  \  |  \              
+ \$$$$$$$$______   \$$ _______   \$$ _| $$_    __    __ 
+   | $$  /      \ |  \|       \ |  \|   $$ \  |  \  |  \
+   | $$ |  $$$$$$\| $$| $$$$$$$\| $$ \$$$$$$  | $$  | $$
+   | $$ | $$   \$$| $$| $$  | $$| $$  | $$ __ | $$  | $$
+   | $$ | $$      | $$| $$  | $$| $$  | $$|  \| $$__/ $$
+   | $$ | $$      | $$| $$  | $$| $$   \$$  $$ \$$    $$
+    \$$  \$$       \$$ \$$   \$$ \$$    \$$$$  _\$$$$$$$
+                                              |  \__| $$
+                                               \$$    $$
+                                                \$$$$$$ 
+                                            
+Basicamente este tutorial sera explicado mediante comentarios en cada etiqueta sus usos, significado,
+etcs.-->
+
+<!DOCTYPE html> <!-- La declaración define este documento como HTML5
+La <!DOCTYPE>declaración representa el tipo de documento y ayuda a los navegadores a mostrar 
+las páginas web correctamente.
+
+Solo debe aparecer una vez, en la parte superior de la página (antes de las etiquetas HTML).
+
+La <!DOCTYPE>declaración no distingue entre mayúsculas y minúsculas.
+Todos los documentos HTML deben comenzar con una declaración de tipo de documento: <!DOCTYPE html>.-->
+<html> <!-- es el elemento raíz de una página HTML.
+El documento HTML en sí comienza <html>y termina con </html>.-->
+    <head> <!--elemento contiene metainformación sobre el documento. El <head>elemento HTML es un 
+        contenedor de metadatos. Los metadatos HTML son datos sobre el documento HTML. 
+        Los metadatos no se muestran.
+        El <head>elemento se coloca entre la <html>etiqueta y la <body>etiqueta:
+            Nota: Los metadatos generalmente definen el título del documento,
+             el conjunto de caracteres, los estilos, los scripts y otra información meta.-->
+            <meta charset="UTF-8">
+            <title>Proyecto HTML</title> <!--elemento especifica un título para el documento-->
+            <meta name="description" content="Proyecto HTML by trinity"> <!--Defina una descripción de su página web::-->
+            <meta name="keywords" content="HTML, CSS, XML, JavaScript"><!--Definir palabras clave para motores de búsqueda:-->
+            <meta name="author" content="Fernando Orellana Rojas"><!--Definir el autor de una página:-->
+            <meta http-equiv="refresh" content="1000"><!--Actualizar documento cada 360 segundos:-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--usado para paginas responsivas.
+                HTML5 introdujo un método para permitir a los diseñadores web tomar el control de la ventana gráfica, a través de la <meta>etiqueta.
+
+            La ventana gráfica es el área visible del usuario de una página web. Varía según el dispositivo y será más pequeño en un teléfono móvil que en la pantalla de una computadora.
+            
+            Debe incluir el siguiente <meta>elemento de ventana gráfica en todas sus páginas web:
+        Un <meta>elemento de ventana gráfica proporciona al navegador instrucciones sobre cómo controlar las dimensiones y la escala de la página.
+
+La parte ancho = ancho del dispositivo establece el ancho de la página para seguir el ancho de la pantalla del dispositivo (que variará según el dispositivo).
+
+La parte initial-scale = 1.0 establece el nivel de zoom inicial cuando el navegador carga por primera vez la página.
+
+-->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+<!--vinculando un archivo externo de estilo solo utilizaso para dar enfasis al h2 con la clase enfasisTitulo de los titulos principales-->
+
+
+
+        </head>
+
+    <body><!--elemento contiene el contenido visible de la página.
+    La parte visible del documento HTML está entre <body>y </body>.-->
+        
+<!--ENCABEZADOS O TITULOS--> <!--Los encabezados HTML se definen con las etiquetas <h1>to <h6>.
+
+<h1>define el encabezado más importante. <h6>define el encabezado menos importante:
+    Nota: Los navegadores agregan automáticamente algunos espacios en blanco (un margen)
+     antes y después de un encabezado. -->
+
+<h2 class="enfasis">Titulos </h2>
+<h2 class="enfasisDos">h1..h6</h2>
+    <h1>Este es un titulo 1</h1>
+    <h2>Este es un titulo 2</h2>
+    <h3>Este es un titulo 3</h3>
+    <h4>Este es un titulo 4</h4>
+    <h5>Este es un titulo 5</h5>
+    <h6>Este es un titulo 6</h6>
+           
+
+<!--PARRAFOS--> <!--Los párrafos HTML se definen con la <p>etiqueta: 
+    Los navegadores agregan automáticamente algunos espacios en blanco (un margen) antes y después de un párrafo.-->
+<h2 class="enfasis">parrafos</h2>
+<h2 class="enfasisDos">p</h2>
+    <p>Este es un parrafo.</p>
+    <p>Este es otro parrafo.</p>
+      <!--Con HTML, no puede cambiar la salida agregando espacios adicionales o líneas adicionales en su código HTML.
+
+      El navegador eliminará los espacios y líneas adicionales cuando se muestre la página:
+-->
+<p>
+    This paragraph
+    contains a lot of lines
+    in the source code,
+    but the browser
+    ignores it.
+    </p>
+    
+    <p>
+    This paragraph
+    contains         a lot of spaces
+    in the source         code,
+    but the        browser
+    ignores it.
+    </p>
+     <!--ELEMENTO PRE--> <!--El <pre>elemento HTML define texto preformateado.
+
+    El texto dentro de un <pre>elemento se muestra en una fuente de ancho fijo (generalmente Courier), 
+    y conserva espacios y saltos de línea:-->
+<h2 class="enfasisDos">pre</h2>    
+    <pre>
+        My Bonnie lies over the ocean.
+      
+        My Bonnie lies over the sea.
+      
+        My Bonnie lies over the ocean.
+      
+        Oh, bring back my Bonnie to me.
+      </pre>
+
+<!--ENLACES--> <!--Los enlaces HTML se definen con la <a>etiqueta:
+                        El destino del enlace se especifica en el href atributo. 
+
+                        Los atributos se utilizan para proporcionar información adicional 
+                        sobre elementos HTML.
+
+                        .-->
+<h2 class="enfasisDos">enlaces - a</h2>  
+    <a href="https://www.google.com">Este es un enlace</a>
+<h2 class="enfasisDos">salto de linea - br</h2>  
+<br> <!--La etiqueta <br> es un salto de linea Los elementos HTML sin contenido se denominan elementos vacíos.-->
+<br> <!--otro salto de linea-->
+
+<!--IMAGENES--> <!--Las imágenes HTML se definen con la <img> etiqueta.
+
+                    El archivo fuente ( src), el texto alternativo ( alt) width, 
+                    y height se proporcionan como atributos:-->
+<h2 class="enfasisDos">imagen</h2>  
+<img src="Imagenes-html/img-1-mascara.webp" alt="mascara de anomymous LED" width="250" height="250">
+
+<!--BOTONES --> <!--Los botones HTML se definen con la <button>etiqueta:-->
+	<h2 class="enfasisDos">boton</h2>  
+<br>
+    <button>este es un boton</button>
+
+<!--LISTAS--> <!--Las listas HTML se definen con la etiqueta (lista <ul>no ordenada / viñeta) 
+                                        o <ol>(lista ordenada / numerada), 
+                                        seguidas de <li>etiquetas (elementos de la lista):-->
+	<h2 class="enfasis">listas</h2> 
+		<h2 class="enfasisDos">ul li</h2> 
+<ul> <!--listas desordenadas-->
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<h2 class="enfasisDos">ol li</h2> 
+<ol> <!--listas ordenadas-->
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<!--
+    ELEMENTO
+
+    Un elemento HTML generalmente consta 
+    de una etiqueta de inicio y una etiqueta de finalización , 
+    con el contenido insertado en el medio: < tagname > El contenido va aquí ... < / tagname > 
+    El elemento HTML es todo, desde la etiqueta de inicio hasta la etiqueta de finalización:
+Los elementos HTML sin contenido se denominan elementos vacíos. Los elementos vacíos no tienen 
+una etiqueta final, como el elemento <br> (que indica un salto de línea).
+
+Elementos HTML anidados
+    Los elementos HTML pueden estar anidados (los elementos pueden contener elementos).
+
+    Todos los documentos HTML consisten en elementos HTML anidados.
+
+    Este ejemplo contiene cuatro elementos HTML:
+
+            <!DOCTYPE html>            Tipo de documento
+            <html>                     1   Tiene una etiqueta de inicio y una etiqueta de finalizacion
+            <body>                     2   Dentro html esta body = Define el cuerpo del documento EInicio, Efinal
+
+            <h1>My First Heading</h1>  3   Dentro de body se encuentran los demas elementos.
+            <p>My first paragraph.</p> 4
+
+            </body>
+            </html>
+-->
+<h2 class="enfasisDos">p br</h2> 
+<p>Este es un </br> parrafo con un salto de linea.</p>  <!--Los elementos vacíos se pueden "cerrar" 
+                                                     en la etiqueta de apertura de esta manera: <br />.
+                                                    HTML5 no requiere que se cierren elementos vacíos.
+                                                     Pero si desea una validación más estricta, o si necesita 
+                                                     hacer que su documento sea legible por analizadores XML,
+                                                      debe cerrar todos los elementos HTML correctamente. -->
+
+ <!--HTML NO SENSITIVO , NO DISTINGUE ENTRE MAYUSCULAS Y MINUSCULAS 
+Las etiquetas HTML no distinguen entre mayúsculas y minúsculas: <P> significa lo mismo que <p>.
+
+El estándar HTML5 no requiere etiquetas en minúsculas, 
+pero W3C recomienda minúsculas en HTML y exige minúsculas para tipos de documentos más estrictos como XHTML. -->
+
+<!--ATRIBUTOS--> <!--Todos los elementos HTML pueden tener atributos
+                     Los atributos proporcionan información adicional sobre un elemento
+                     Los atributos siempre se especifican en la etiqueta de inicio
+                     Los atributos generalmente vienen en pares nombre / valor como: nombre = "valor"+
+                    Sugerimos: usar atributos en minúsculas
+                    El estándar HTML5 no requiere nombres de atributo en minúsculas.
+
+                    El atributo de título se puede escribir con mayúsculas o minúsculas como título o TÍTULO .
+
+                    W3C recomienda minúscula en HTML, y exige minúsculas para los tipos de documentos más
+                     estrictas como XHTML.  El estándar HTML5 no requiere comillas alrededor de los valores de los atributos.
+
+                  El href atributo, demostrado posteriormente, se puede escribir sin comillas:  
+                <a href=https://www.w3schools.com> =  MALO  
+                <a href="https://www.w3schools.com"> = BUENO
+
+                OMITIR COMILLAS PUEDE PRODUCIR ERRORES 
+            PUEDES USAR COMILLAS DOBLES O SIMPLES O AMBAS.EN CASOS COMO ESTOS <p title="John 'ShotGun' Nelson">         -->
+
+<h2 class="enfasis">Atributos</h2> 
+<h2 class="enfasisDos">a href</h2> 
+<!-- ATRIBUTO HREF-->
+<a href="https://www.w3schools.com">This is a link</a>
+<h2 class="enfasisDos">img src</h2> 
+<!-- ATRIBUTO SRC-->
+<img src="Imagenes-html/img-1-mascara.webp">
+	
+<h2 class="enfasisDos">img src widht height</h2> 
+<!-- ATRIBUTO ANCHO Y ALTO EN IMAGENES- px predeterminada-->
+<img src="Imagenes-html/img-1-mascara.webp" width="300" height="250">
+	
+	
+<h2 class="enfasisDos">img src alt </h2><!-- ATRIBUTO ALT CON IMAGEN FUNCIONANDO--> <!--El altatributo especifica un texto alternativo que se utilizará, 
+    si no se puede mostrar una imagen.
+El valor del altatributo puede ser leído por lectores de pantalla. 
+De esta manera, alguien que "escucha" la página web, por ejemplo, 
+una persona con discapacidad visual, puede "escuchar" el elemento.-->
+<img src="Imagenes-html/img-1-mascara.webp" alt="Girl with a jacket">
+	
+
+<h2 class="enfasisDos">img src alt </h2>
+<!-- ATRIBUTO ALT CON IMAGEN error o INEXISTENTE-->
+<img src="NOEXISTE.jpg" alt="La imagen no pudo ser cargada, entonces el texto del atributo alt se muestra">
+	
+	
+<h2 class="enfasisDos">p style </h2>
+<!--ATRIBUTO ESTILO--> <!--El styleatributo se utiliza para especificar el estilo de 
+                            un elemento, como color, fuente, tamaño, etc.-->
+<p style="color:red">This is a paragraph.</p>
+
+<h2 class="enfasisDos">html lang </h2>
+<p>&lt;html lang="en-US"&gt;</p>
+<!--ATRIBUTO LANG--> <!--El idioma del documento se puede declarar en la <html>etiqueta.
+                         El idioma se declara con el lang atributo.
+                         Declarar un idioma es importante para las aplicaciones de accesibilidad 
+                         (lectores de pantalla) y los motores de búsqueda:-->
+<!-- html lang="en-US" Las dos primeras letras especifican el idioma (en) de english. 
+    Si hay un dialecto, agregue dos letras más (US). -->
+<!--TITULO DE ATRIBUTO--> <!--Aquí, titlese agrega un atributo al <p> elemento. El valor del atributo
+     de título se mostrará como información sobre herramientas cuando pase el mouse sobre el párrafo:-->
+     
+<h2 class="enfasisDos">p title</h2> 
+  
+<p title="YO SOY LA INFORMACION DE HERRAMIENTA">
+    PARRAFO CON ATRIBUTO TITLE "HOVER ME".
+</p>
+<!--MAS ATRIBUTOS-->
+<!--ATRITUBO DISABLED-->
+<h2 class="enfasisDos">input type name</h2> 
+ 
+    <p>
+    Nombre: <input type="text" name="nombre_como_se_guarda"><br> <!--input activado por default-->
+
+    	
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">input disabled</h2><!--+++++++Titulo seccion+++++++-->	
+    	
+    Apellido: <input type="text" name="apellido" title="input desactivado" disabled><br> <!--ATRIBUTO DISABLED EN EL INPUT-->
+    <input type="submit" value="Submit" disabled title="input desactivado">
+    </p>
+
+
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p id</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--ATRIBUDO ID--> 
+
+<!--Especifica un unico identificador por un elemento esto sirve para añadir personalizacion
+a ese elemento-->
+<p id="parrafounico"> Este parrafo tiene un atributo id</p>
+
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">hr</h2><!--+++++++Titulo seccion+++++++-->
+
+
+<!--REGLAS HORIZONTALES HR--> <!--La <hr>etiqueta define un salto temático en una página HTML, y se muestra con mayor frecuencia como una regla horizontal.
+
+El <hr>elemento se usa para separar contenido (o definir un cambio) en una página HTML:-->
+<hr>
+<hr>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">Atributo style</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--ATRIBUTO ESTILO--> <!--sintaxis: <tagname style="property:value;">-->
+<!--COLOR DE FONDO-->
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">div style= background-color</h2><!--+++++++Titulo seccion+++++++-->
+<div style="background-color: orange;"> 
+
+    <h3>Este es un titulo 3</h3>
+    <p>Este es un parrafo</p>
+    
+</div>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h4 color p color</h2><!--+++++++Titulo seccion+++++++-->
+<!--COLOR DE TEXTO-->
+<h4 style="color:blueviolet">This is a heading</h4>
+<p style="color:salmon;">This is a paragraph.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h4 font-family - p font-family</h2><!--+++++++Titulo seccion+++++++-->
+<!--FUENTES-->
+<h4 style="font-family:verdana;">This is a heading</h4>
+<p style="font-family:courier;">This is a paragraph.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h4 font-size:250% - p font-size:160%</h2><!--+++++++Titulo seccion+++++++-->
+<!--TAMAÑO DE TEXTO-->
+<h4 style="font-size:250%;">This is a heading</h4>
+<p style="font-size:160%;">This is a paragraph.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h4,p text-align:center</h2><!--+++++++Titulo seccion+++++++-->
+<!--ALINEAZION DEL TEXTO-->
+<h4 style="text-align:center;">Centered Heading</h4>
+<p style="text-align:center;">Centered paragraph.</p>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">formato de texto</h2><!--+++++++Titulo seccion+++++++-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">b</h2><!--+++++++Titulo seccion+++++++-->
+<b>This text is bold</b>
+<br>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">strong</h2><!--+++++++Titulo seccion+++++++-->
+<strong>This text is strong</strong>
+<br/>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">i</h2><!--+++++++Titulo seccion+++++++-->
+<i>This text is italic</i>
+<br/>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">em</h2><!--+++++++Titulo seccion+++++++-->
+<em>This text is emphasized</em>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h2 small</h2><!--+++++++Titulo seccion+++++++-->
+<h2>HTML <small>Small</small> Formatting</h2>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h2 mark</h2><!--+++++++Titulo seccion+++++++-->
+<h2>HTML <mark>Marked</mark> Formatting</h2>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p del</h2><!--+++++++Titulo seccion+++++++-->
+<p>My favorite color is <del>blue</del> red.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p ins</h2><!--+++++++Titulo seccion+++++++-->
+<p>My favorite <ins>color</ins> is red.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p sub</h2><!--+++++++Titulo seccion+++++++-->
+<p>This is <sub>subscripted</sub> text.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p sup</h2><!--+++++++Titulo seccion+++++++-->
+<p>This is <sup>superscripted</sup> text.</p>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p q</h2><!--+++++++Titulo seccion+++++++-->
+<!--QUOTATION Q-->
+<p>WWF's goal is to <q>Build a future where people li6ve in harmony with nature.</q></p>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p - blockquote cite="http"</h2><!--+++++++Titulo seccion+++++++-->
+<!--BLOCKQUOTE-->
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p abbr</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--abbr-->
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">address br</h2><!--+++++++Titulo seccion+++++++-->
+<!--ADRRES-->
+
+<address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+    </address>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p cite</h2><!--+++++++Titulo seccion+++++++-->    
+<!--CITE-->
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">bdo dir="rtl"</h2><!--+++++++Titulo seccion+++++++-->
+<!--BDO-->
+<bdo dir="rtl">This text will be written from right to left</bdo>
+</br>
+<bdo dir="rtl">Este es un llamado al levantamiento contra los poderes elites, y sectas que prohiben el conocimiento libre, ahora es nuestro deber difundirlo.</bdo>
+
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">+ style en linea</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h1 style="background-color; text-align; color;"</h2><!--+++++++Titulo seccion+++++++-->
+<!--COLOR DE FONDO, COLOR DE TEXTO-->
+<h1 style="background-color:DodgerBlue; text-align: center; color: white;">Hello World</h1>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p style="backgroud-color; color;"</h2><!--+++++++Titulo seccion+++++++-->
+<p style="background-color:black; color: magenta;" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad sunt ex voluptates error quasi iure dolore quia fugiat dolorum, impedit ullam amet consequatur quo necessitatibus minima saepe at, veritatis est?</p>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h1 p style="color;"</h2><!--+++++++Titulo seccion+++++++-->
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">style border</h2><!--+++++++Titulo seccion+++++++-->
+<!--COLOR DE BORDE-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h3 style border: 2px solid color</h2><!--+++++++Titulo seccion+++++++-->
+<h3 style="border:2px solid Tomato;">Hello World</h3>
+<h3 style="border:2px solid DodgerBlue;">Hello World</h3>
+<h3 style="border:2px solid Violet;">Hello World</h3>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">Valores de color</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--valores de color-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">rgb</h2><!--+++++++Titulo seccion+++++++-->
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">hexadecimal #</h2><!--+++++++Titulo seccion+++++++-->
+<h1 style="background-color:#ff6347;">...</h1>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">hsl</h2><!--+++++++Titulo seccion+++++++-->
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">rgba</h2><!--+++++++Titulo seccion+++++++-->
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">hsla</h2><!--+++++++Titulo seccion+++++++-->
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">rgb</h2><!--+++++++Titulo seccion+++++++-->
+<!--RGB COLOR-->
+<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+<h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+<h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+<h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+<h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+
+<p>In HTML, you can specify colors using RGB values.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">rgb tonos grises</h2><!--+++++++Titulo seccion+++++++-->
+<!--RGB TONOS GRISES--> 
+
+<h1 style="background-color:rgb(0, 0, 0); color: white;">rgb(0, 0, 0)</h1>
+<h1 style="background-color:rgb(60, 60, 60) ;color: white;">rgb(60, 60, 60)</h1>
+<h1 style="background-color:rgb(120, 120, 120);">rgb(120, 120, 120)</h1>
+<h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+<h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+<h1 style="background-color:rgb(255, 255, 255);">rgb(255, 255, 255)</h1>
+
+<p>By using equal values for red, green, and blue, you will get different shades of gray.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">Hexadecimal</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--HEXADECIMAL-->
+<h1 style="background-color:#ff0000;">#ff0000</h1>
+<h1 style="background-color:#0000ff;">#0000ff</h1>
+<h1 style="background-color:#3cb371;">#3cb371</h1>
+<h1 style="background-color:#ee82ee;">#ee82ee</h1>
+<h1 style="background-color:#ffa500;">#ffa500</h1>
+<h1 style="background-color:#6a5acd;">#6a5acd</h1>
+
+<p>In HTML, you can specify colors using Hex values.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">hexadecimal tonos grises</h2><!--+++++++Titulo seccion+++++++-->
+<!--HEXADECIMAL TONOS GRISES-->
+<h1 style="background-color:#000000;color: white;">#000000</h1>
+<h1 style="background-color:#3c3c3c;color: white;">#3c3c3c</h1>
+<h1 style="background-color:#787878;">#787878</h1>
+<h1 style="background-color:#b4b4b4;">#b4b4b4</h1>
+<h1 style="background-color:#f0f0f0;">#f0f0f0</h1>
+<h1 style="background-color:#ffffff;">#ffffff</h1>
+
+<p>By using equal values for red, green, and blue, you will get different shades of gray.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">HSL ( tono , saturación , luminosidad )</h2><!--+++++++Titulo seccion+++++++-->
+<!--VALOR HSL--> <!--En HTML, se puede especificar un color utilizando matiz, saturación y luminosidad (HSL) en la forma:
+
+hsl ( tono , saturación , luminosidad )
+
+El tono es un grado en la rueda de color de 0 a 360. 0 es rojo, 120 es verde y 240 es azul.
+
+La saturación es un valor porcentual, 0% significa un tono de gris y 100% es el color completo.
+
+La claridad también es un porcentaje, 0% es negro, 50% no es claro ni oscuro, 100% es blanco-->
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+<h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+<h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+<h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+<h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+
+<p>In HTML, you can specify colors using HSL values.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">hsl saturacion</h2><!--+++++++Titulo seccion+++++++-->
+<!--HSL SATURACION-->
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+<h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+<h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+<h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+<h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+
+<p>With HSL colors, less saturation mean less color. 0% is completely gray.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">hsl ligereza</h2><!--+++++++Titulo seccion+++++++-->
+<!--HSL LIGEREZA-->
+<h1 style="background-color:hsl(0, 100%, 0%); color: white;">hsl(0, 100%, 0%)</h1>
+<h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+<h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+<h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">hsl tonos grises</h2><!--+++++++Titulo seccion+++++++-->
+<!--HSL TONOS GRISES-->
+<h1 style="background-color:hsl(0, 0%, 0%); color: white;">hsl(0, 0%, 0%)</h1>
+<h1 style="background-color:hsl(0, 0%, 24%);color: white;">hsl(0, 0%, 24%)</h1>
+<h1 style="background-color:hsl(0, 0%, 47%);">hsl(0, 0%, 47%)</h1>
+<h1 style="background-color:hsl(0, 0%, 71%);">hsl(0, 0%, 71%)</h1>
+<h1 style="background-color:hsl(0, 0%, 94%);">hsl(0, 0%, 94%)</h1>
+<h1 style="background-color:hsl(0, 0%, 100%);">hsl(0, 0%, 100%)</h1>
+
+<p>With HSL colors, shades of gray are made by setting the saturation to 0%, and adjusting the lightness according to how dark/light the gray color should be.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">rgba ( rojo, verde , azul, alfa )</h2><!--+++++++Titulo seccion+++++++-->
+<!--RGBA--> <!--Los valores de color RGBA son una extensión de los valores de color RGB con un canal alfa, que especifica la opacidad de un color.
+
+Un valor de color RGBA se especifica con:
+
+rgba ( rojo, verde , azul, alfa )
+
+El parámetro alfa es un número entre 0.0 (totalmente transparente) y 1.0 (no transparente en absoluto):-->
+<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+
+<p>You can make transparent colors by using the RGBA color value.</p>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">hsla ( tono, saturación , luminosidad, alfa )</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--HSLA--> <!--Los valores de color HSLA son una extensión de los valores de color HSL con un canal alfa, que especifica la opacidad de un color.
+
+Un valor de color HSLA se especifica con:
+
+hsla ( tono, saturación , luminosidad, alfa )
+
+El parámetro alfa es un número entre 0.0 (totalmente transparente) y 1.0 (no transparente en absoluto):-->
+<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+
+<p>You can make transparent colors by using the HSLA color value.</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">CSS en html</h2><!--+++++++Titulo seccion+++++++-->
+<!--CSS-->
+<!--INLINE-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">inline</h2><!--+++++++Titulo seccion+++++++-->
+<p style="color:blue;">Este es un parrafo con un atributo style color azul que se inserta inline (en la linea de los elementos html de esta forma)<br><br><span style="color: black; background-color: white; border: 2px solid black; padding: 1px;">&lt;p&gt; <mark>style="color:blue;"</mark>Este es un parrafo con un etc....&lt;/p&gt;</span></p>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">Interno</h2><!--+++++++Titulo seccion+++++++-->
+<!--INTERNO-->
+<br><span >
+<pre style="color: black; background-color: white; border: 2px solid black; padding: 1px;">
+&lt;html&gt;
+ &lt;head&gt;
+ <mark> &lt;style&gt;
+     body{color:blue;}
+                          <pre style="text-align:rigth;">/*dentro la etiqueta style insertarias todo el css/*</pre>
+  &lt;/style&gt; </mark>
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</span>
+</pre>
+<br>
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">Externo (más recomendado)</h2><!--+++++++Titulo seccion+++++++-->
+<!--Externo-->
+<br><span >
+<pre style="color: black; background-color: white; border: 2px solid black; padding: 1px;">
+&lt;html&gt;
+ &lt;head&gt;
+ <mark>  &lt;link rel="stylesheet" href="ruta/styles.css"&gt; </mark>
+     
+ <pre style="text-align:rigth;">/*esto te permite vincular 
+               un archivo css que se encuentre 
+               externamente del documento html,
+               para que funcione debe estar 
+               correctamente vinculado*/</pre>
+  
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</span>
+</pre>
+<br>
+<!--EXTERNO
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">atributos de enlaces</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--ATRIBUTOS DE ENLACES -->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a href target="_top"</h2><!--+++++++Titulo seccion+++++++-->
+
+<a href="https://www.w3schools.com/html/" target="_top">top</a> <!--Abre en la misma ventana Abre el documento vinculado en el cuerpo completo de la ventana.-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a href target="_blank"</h2><!--+++++++Titulo seccion+++++++-->
+
+<br/>
+<a href="https://www.w3schools.com/html/" target="_blank">_blank</a> <!--Abre en una nueva ventana--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a href target="_self"</h2><!--+++++++Titulo seccion+++++++-->
+
+<br/>
+<a href="https://www.w3schools.com/html/" target="_self">_self</a> <!--Abre en la misma  ventana--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a href target="_parent"</h2><!--+++++++Titulo seccion+++++++-->
+
+<br/>
+<a href="https://www.w3schools.com/html/" target="_parent">parent</a> <!--abre all documento vinculado en el marco primario-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a href img</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--imagen de enlace-->
+<br/>
+<span>imagen link con title</span>
+<a href="https:google.com" title="te lleva a google.com si le das a la imagen"> <!--Nota: border:0; se agrega para evitar que IE9 (y versiones anteriores) muestren un borde alrededor de la imagen (cuando la imagen es un enlace).-->
+    <img src="Imagenes-html/img-1-mascara.webp" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+  </a>
+  
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">rutas de archivos</h2><!--+++++++Titulo seccion+++++++-->
+
+  <!--RUTAS DE ARCHIVOS -->
+  <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a href="https://"</h2><!--+++++++Titulo seccion+++++++-->
+
+  <br/>
+  <a href="https://www.w3schools.com/html/default.asp">ruta externa</a><br/>
+  
+  
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a href="carpeta/imagen.jpg"</h2><!--+++++++Titulo seccion+++++++-->
+
+  <a href="Imagenes-html/img-1-mascara.webp">ruta internal</a><br/>
+  
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a href="paginaweb.html</h2><!--+++++++Titulo seccion+++++++-->
+ 
+  
+  <a href="html.html">pagina ruta interna</a>
+
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">Marcador de saltos con #ID</h2><!--+++++++Titulo seccion+++++++-->
+
+
+  <!--MARCADOR DE SALTOS--> <!--Los marcadores HTML se utilizan para permitir a los lectores saltar a partes específicas de una página web.
+
+Los marcadores pueden ser útiles si una página web es muy larga.
+
+Para crear un marcador: primero cree el marcador y luego agregue un enlace.
+
+Cuando se hace clic en el enlace, la página se desplazará hacia abajo o hacia arriba a la ubicación con el marcador.-->
+<section style="background-color:hsl(80, 100%, 75%); width:100%;">
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p a href="#Capitulo4" ..C10 ..C17</h2><!--+++++++Titulo seccion+++++++-->
+<p><a href="#C4" style="color: magenta; font-weight: ">Jump to Chapter 4</a></p>
+<p><a href="#C10" style="color: magenta; font-weight: bold;">Jump to Chapter 10</a></p>
+<p><a href="#salto17" style="color: magenta; font-weight: bold;">Jump to Chapter 17</a></p>
+<p><a href="#salto30" style="color: magenta; font-weight: bold;">Este es un salto al capitulo 30</a></p>
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4" >Chapter 4</h2>
+<p style="color: magenta; font-weight;">This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p style="color: magenta; font-weight;">This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="salto17">Chapter 17</h2>
+<p style="color: magenta; font-weight;">This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+<h2>Chapter 24</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 25</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 27</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 28</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 29</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="salto30">Chapter 30</h2>
+<p style="color: magenta; font-weight;">This chapter explains ba bla bla</p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a href="page.html#id"</h2><!--+++++++Titulo seccion+++++++-->
+<mark>tambien puedes referenciar a otra pagina <a href="html_demo.html#C4">Jump to Chapter 4</a> </mark>
+</section>
+</br>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">IMAGENES</h2><!--+++++++Titulo seccion+++++++-->
+<!--IMAGENES-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">img src alt style "width 500px height 600px "</h2>
+<!--+++++++Titulo seccion+++++++-->
+
+<img src="Imagenes-html/img-1-mascara.webp" alt="la imagen no se cargo correctamente" style="width:500px;height:600px;"> <!--En HTML, las imágenes se definen con la <img>etiqueta.
+
+    La <img>etiqueta está vacía, contiene solo atributos y no tiene una etiqueta de cierre.
+    
+    El srcatributo especifica la URL (dirección web) de la imagen:-->
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">Imagenes en otro servidor</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos"> img src="https://page.com/image.jpg"</h2><!--+++++++Titulo seccion+++++++-->
+<br>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">Imagen gif</h2><!--+++++++Titulo seccion+++++++-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos"> img src="https://page.com/image.gif"</h2><!--+++++++Titulo seccion+++++++-->
+<!--IMAGEN GIF-->
+<img src="Imagenes-html/programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">imagen flotante</h2><!--+++++++Titulo seccion+++++++-->
+<!--IMAGEN FLOTANTE-->
+<section>
+
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p img src style="float:right; width:102px height:52px"</h2><!--+++++++Titulo seccion+++++++-->
+<p><strong>Float the image to the right:</strong></p>
+
+<p style="background-color: skyblue; width: 500px; height: 120px;">
+<img src="Imagenes-html/smiley.gif" alt="Smiley face" style="float:right;width:102px;height:52px;">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+</p>
+
+<p><strong>Float the image to the left:</strong></p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p img src style="float:left; width height"</h2><!--+++++++Titulo seccion+++++++-->
+<p>
+<img src="Imagenes-html/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.  
+</p>
+
+</section>
+</br>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">IMAGE MAPS</h2><!--+++++++Titulo seccion+++++++-->
+
+<!--IMAGE MAP- TAMBIEN PUEDE ACTIVAR UN JS-->
+<section style="background-color: hsl(147, 50%, 47%);">
+
+    <h2 style="color: white; font-weight: bold;">Image Maps</h2>
+    <p style="color: yellow;">Click sobre cualquier articulo: computadora, celular o cafe. para acceder.</p>
+
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">img map name=workmap area shape= rect coords alt href</h2><!--+++++++Titulo seccion+++++++-->
+    <img src="Imagenes-html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    
+    <map name="workmap" >
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="image_map/computer.html">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="image_map/celular.html">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="image_map/cafe.html">
+    </map>
+    </section>
+
+
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">BACKGROUND IMAGE</h2><!--+++++++Titulo seccion+++++++--> <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">div style = "background-image: url(img.webp); background-repeat: no-repeat; 
+ color:blueviolet; background-size: contain;"</h2><!--+++++++Titulo seccion+++++++-->   
+<!--IMAGE BACKGROUND.-->
+<h2>Background Image</h2>
+<div style = "background-image: url(imagenes-html/img-1-mascara.webp); background-repeat: no-repeat; 
+ color:blueviolet; background-size: contain;" >
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi harum tenetur aliquam veritatis eos ad magnam nulla aspernatur ullam nobis fugit beatae illo hic rerum, doloremque odit iste dolore.
+You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a div element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. (Try resizing the<br>
+browser window to see how the<br>
+background image behaves.
+</p>
+</div>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">BACKGROUND IMAGE 2 img</h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">div background-image url(),url();background-repeat:repeat;
+background-size: contain;</h2><!--+++++++Titulo seccion+++++++--> 
+<div style = "background-image: url(https://pngimg.com/uploads/pokemon/pokemon_PNG129.png), url(imagenes-html/rayos.jpg); background-repeat: repeat; 
+ color:yellow; background-size: contain;" >
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi harum tenetur aliquam veritatis eos ad magnam nulla aspernatur ullam nobis fugit beatae illo hic rerum, doloremque odit iste dolore.
+You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a div element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. (Try resizing the<br>
+browser window to see how the<br>
+background image behaves.
+</p>
+</div>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">IMAGE PICTURE, resize</h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos"><code><pre style="font-size: 11px; text-align:left;">picture
+  source media="(min-width: 650px)" srcset="img1.jpg"
+  source media="(min-width: 465px)" srcset="img2.jpg"
+  img src="imagenes-html/smiley.gif" style="width:auto;
+picture</pre></code></h2><!--+++++++Titulo seccion+++++++--> 
+
+<!--IMAGE PICTURE-->
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="Imagenes-html/img-1-mascara.webp">
+  <source media="(min-width: 465px)" srcset="Imagenes-html/workplace.jpg">
+  <img src="imagenes-html/smiley.gif" style="width:auto;"> <!--RESPALDO SI NO FUNCIONAN LOS PICTURES-->
+</picture>
+
+<p>Cambie el tamaño del navegador para ver diferentes versiones de la carga de imágenes en diferentes tamaños de ventana gráfica.
+El navegador busca el primer elemento fuente donde la consulta de medios coincide con el ancho de la ventana gráfica actual del usuario,
+y obtiene la imagen especificada en el atributo srcset.</p>
+
+<p>El elemento img se requiere como la última etiqueta secundaria del bloque de declaración de imagen.
+El elemento img se usa para proporcionar compatibilidad con versiones anteriores para navegadores que no admiten el elemento de imagen, o si ninguna de las etiquetas de origen coincide.
+</p>
+
+<p><strong>Note:</strong> El elemento de imagen no es compatible con IE12 y versiones anteriores o Safari 9.0 y versiones anteriores.</p>
+
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">TABLAS</h2><!--+++++++Titulo seccion+++++++--> 
+
+<!--TABLAS-->
+<head> <!-- NO STANDAR. SOLO POSIBLE EN PRACTICAS..-->
+   <style>
+    table {
+        width:100%;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 15px;
+        text-align: left;
+      }
+      table#t01 tr:nth-child(even) {
+        background-color: #eee;
+      }
+      table#t01 tr:nth-child(odd) {
+       background-color: #fff;
+      }
+      table#t01 th {
+        background-color: black;
+        color: white;
+      }
+      </style>
+</head>
+
+
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">1 table row = tr = fila <br>table date cell=  td = columna</h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">table 1 tr 8 td</h2><!--+++++++Titulo seccion+++++++--> 
+<table>
+	<tr>
+		<td>1 columna</td>
+		<td>2 td</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+	</tr>
+</table>
+
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">1 TH</h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">table tr th</h2><!--+++++++Titulo seccion+++++++--> 
+
+<table>
+	<tr>
+		<th>titulo</td>
+	</tr>
+
+</table>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">tr th td</h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">table 2 tr 2th 2 td</h2><!--+++++++Titulo seccion+++++++--> 
+
+
+
+<table>
+	<tr>
+		<th>titulo</td>
+		<th>2 th</th>
+	</tr>
+	<tr>
+		<td>1 td</td>
+		<td>2 td</td>
+	<tr>
+</table>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">MAS EJEMPLOS DE TABLAS </h2><!--+++++++Titulo seccion+++++++--> 
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">Tabla sin estilos </h2><!--+++++++Titulo seccion+++++++--> 
+
+<h2>Styling Tables</h2>
+
+<table >
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+<br>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">Tabla con estilos css, revisar head de TABLAS. </h2><!--+++++++Titulo seccion+++++++--> 
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">Listas </h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">ul style </h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ul li style= "list-style-type:disc;" </h2><!--+++++++Titulo seccion+++++++--> 
+<!--listas-->
+
+<ul style="list-style-type:disc;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">list-style-type: circle" </h2><!--+++++++Titulo seccion+++++++-->   
+  <ul style="list-style-type:circle;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">list-style-type: square </h2><!--+++++++Titulo seccion+++++++-->  
+  <ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">list-style-type: none </h2><!--+++++++Titulo seccion+++++++-->  
+
+  <ul style="list-style-type:none;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">ol type</h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ol li  </h2><!--+++++++Titulo seccion+++++++--> 
+  <!--ol-->
+  <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ol type="1" li  </h2><!--+++++++Titulo seccion+++++++--> 
+  <!--ol-->
+  <ol type="1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ol type="A" </h2><!--+++++++Titulo seccion+++++++--> 
+  <ol type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ol type="a"   </h2><!--+++++++Titulo seccion+++++++--> 
+  <ol type="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ol type="I"   </h2><!--+++++++Titulo seccion+++++++--> 
+  <ol type="I">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ol type="i"   </h2><!--+++++++Titulo seccion+++++++--> 
+  <ol type="i">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">DESCRIPCION LISTA  </h2><!--+++++++Titulo seccion+++++++--> 
+  <!--description list-->
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">&lt;dl&gt; dt: coffe dd: black hot drink. &lt;dl&gt; </h2><!--+++++++Titulo seccion+++++++--> 
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">Listas aninadas sin restricciones </h2><!--+++++++Titulo seccion+++++++--> 
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ul li ul li</h2><!--+++++++Titulo seccion+++++++-->
+  <!--nested html list-->
+  <ul>
+    <li>Coffee</li>
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">CONTEO DE LISTAS </h2><!--+++++++Titulo seccion+++++++--> 
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ol start="1500" </h2><!--+++++++Titulo seccion+++++++-->
+  <!--CONTROL LIST COUNTING-->
+  <ol start="1500">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    <li>a</li>
+    <li>b</li>
+    <li>ss</li>
+    <li>dd</li>
+    <li>dd</li>
+    
+  </ol >
+      <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">IFRAME CON UN ENLACE A</h2><!--+++++++Titulo seccion+++++++--> 
+   <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">iframe height=300px width= 50% src="demo-iframe.html" name="iframe_a"</h2><!--+++++++Titulo seccion+++++++--> 
+
+  <!--IFRAMES-->
+
+ 
+
+<iframe height="300px" width="50%" src="demo_iframe.htm" name="iframe_a"></iframe>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p a href="html.html" target="iframe_a"</h2><!--+++++++Titulo seccion+++++++--> 
+
+<p><a href="html.html" target="iframe_a">ABRIR IFRAME</a></p> <!--<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>-->
+
+<p>Cuando el objetivo de un enlace coincide con el nombre de un iframe, el enlace se abrirá en el iframe.</p>
+
+  <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">JAVA SCRIPT EN HTML</h2><!--+++++++Titulo seccion+++++++--> 
+<!--SCRIPT HTML-->
+
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p id="demo"</h2><!--+++++++Titulo seccion+++++++--> 
+<p id="demo">JavaScript puede cambiar el estilo de un elemento html</p>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">script fuction myfuction(){document.getElementById("demo").style.fontsize ="25px";}</h2>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+function restart(){
+    document.getElementById("demo").style.fontSize="35px";
+    document.getElementById("demo").style.textAlign="center";
+    document.getElementById("demo").style.color="greenyellow";
+    document.getElementById("demo").style.backgroundColor = "black";
+     
+}
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+
+ 
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+<button type="button" onclick="restart()">otra</button>
+
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">file pathcs explicación</h2><!--+++++++Titulo seccion+++++++--> 
+
+<!--FILE PATCHS--><!--
+    <img src = "picture.jpg">	picture.jpg se encuentra en la misma carpeta que la página actual
+<img src = "images / picture.jpg">	picture.jpg se encuentra en la carpeta de imágenes en la carpeta actual
+<img src = "/ images / picture.jpg">	picture.jpg se encuentra en la carpeta de imágenes en la raíz de la web actual
+<img src = "../ picture.jpg">	picture.jpg se encuentra en la carpeta un nivel más arriba de la carpeta actual
+-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">elementos semanticos</h2><!--+++++++Titulo seccion+++++++--> 
+<!--ELEMENTOS SEMANTICOS-->
+<!--<header>: define un encabezado para un documento o una sección
+<nav> - Define un contenedor para enlaces de navegación
+<sección> - Define una sección en un documento
+<artículo> - Define un artículo independiente independiente
+<aside> - Define contenido aparte del contenido (como una barra lateral)
+<footer> - Define un pie de página para un documento o una sección
+<detalles> - Define detalles adicionales
+<summary>: define un encabezado para el elemento <details>-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">tecnicas de diseño html</h2><!--+++++++Titulo seccion+++++++--> 
+<!--TECNICAS DE DISEÑO HTML-->
+<!--Tablas HTML (no recomendado)
+Propiedad flotante CSS
+CSS flexbox
+Marco CSS
+Rejilla CSS-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">responsive html imagenes</h2><!--+++++++Titulo seccion+++++++--> 
+<!--RESPONSIVE HTML IMAGENES-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">img src="Imagenes-html/img-1-mascara.webp" style="width:100%;"</h2><!--+++++++Titulo seccion+++++++--> 
+<img src="Imagenes-html/img-1-mascara.webp" style="width:100%;">
+
+<h2 class="enfasisDos">img src="Imagenes-html/img-1-mascara.webp" style="max-width:100%;height:auto;</h2><!--+++++++Titulo seccion+++++++--> 
+<img src="Imagenes-html/img-1-mascara.webp" style="max-width:100%;height:auto;">
+
+</br>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">picture image</h2><!--+++++++Titulo seccion+++++++--> 
+<!--PICTURE IMAGE-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos"><code><pre style="font-size: 11px; text-align:left;">picture
+ source srcset="imagenes-html/workplace.jpg" media="(max-width: 600px)"
+    source srcset="Imagenes-html/img-1-mascara.webp" media="(max-width: 1500px)"
+    source srcset="#"
+    img src="#" alt="Flowers"
+picture</pre></code></h2><!--+++++++Titulo seccion+++++++--> 
+<picture>
+    <source srcset="imagenes-html/workplace.jpg" media="(max-width: 600px)">
+    <source srcset="Imagenes-html/img-1-mascara.webp" media="(max-width: 1500px)">
+    <source srcset="#">
+    <img src="#" alt="Flowers">
+  </picture>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">texto responsive</h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">h1 style="font-size:5vw"</h2><!--+++++++Titulo seccion+++++++--> 
+
+<!--RESPOSIVE TEXT-->
+<h1 style="font-size:5vw">este texto tiene 5vw</h1> <!--El tamaño del texto se puede establecer con una unidad "vw", lo que significa el "ancho de la vista".
+
+    De esa forma, el tamaño del texto seguirá el tamaño de la ventana del navegador: Viewport es el tamaño de la ventana del navegador. 1vw = 1% del ancho de la ventana gráfica. Si la ventana gráfica tiene 50 cm de ancho, 1vw mide 0.5 cm.-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">media querys</h2><!--+++++++Titulo seccion+++++++--> 
+ <!--MEDIA QUERYS-->   
+    <section>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+            * {
+              box-sizing:border-box;
+            }
+          
+            .left {
+              background-color:#2196F3;
+              padding:20px;
+              float:left;
+              width:20%; /* The width is 20%, by default */
+            }
+            
+            .main {
+              background-color:#f1f1f1;
+              padding:20px;
+              float:left;
+              width:60%; /* The width is 60%, by default */
+            }
+            
+            .right {
+              background-color:#4CAF50;
+              padding:20px;
+              float:left;
+              width:20%; /* The width is 20%, by default */
+            }
+            
+            /* Use a media query to add a break point at 800px: */
+            @media screen and (max-width:800px) {
+              .left, .main, .right {
+                width:900px; /* The width is 100%, when the viewport is 800px or smaller */
+              }
+            }
+            </style>
+            </head>    
+
+            <h2>Media Queries</h2>
+            <p>redimensiona la ventana del navegador</p>
+            
+            <p>Asegúrese de alcanzar el punto de interrupción a 800 px al cambiar el tamaño de este marco.</p>
+            
+            <div class="left">
+              <p>Left Menu</p>
+            </div>
+            
+            <div class="main">
+              <p>Main Content</p>
+            </div>
+            
+            <div class="right">
+              <p>Right Content</p>
+            </div>
+    </section>
+<br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">ELEMENTOS DE CODIGO DE COMPUTADORA</h2><!--+++++++Titulo seccion+++++++--> 
+<!--ELEMENTOS DE CODIGO DE COMPUTADORA-->
+ <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p kbd</h2><!--+++++++Titulo seccion+++++++--> 
+<!--KBD-->
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">p samp</h2><!--+++++++Titulo seccion+++++++--> 
+<!--SAMP-->
+<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">code</h2><!--+++++++Titulo seccion+++++++--> 
+<!--CODE-->
+<code>
+    x = 5;
+    y = 6;
+    z = x + y;
+
+    </code>
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">pre code</h2><!--+++++++Titulo seccion+++++++--> 
+<!--CODE CON PRE-->
+<pre>
+    <code>
+    x = 5;
+    y = 6;
+    z = x + y;
+    </code>
+    </pre>
+    <!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">var var sup</h2><!--+++++++Titulo seccion+++++++--> 
+<!--VAR PARA VARIABLES-->
+Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">forma de escribir entidades reservadas por html</h2><!--+++++++Titulo seccion+++++++--> 
+<!--reservado HTML-->
+<!--ENTIDADES HTML-->
+<span style="color: black; font-size: 35px;">
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">&</h2><!--+++++++Titulo seccion+++++++--> 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">nbsp;</h2><!--+++++++Titulo seccion+++++++--> 
+&nbsp;NO&nbsp;BREAKING&nbsp;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">lt;</h2><!--+++++++Titulo seccion+++++++--> 
+&lt;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">gt;</h2><!--+++++++Titulo seccion+++++++--> 
+&gt;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">amp;</h2><!--+++++++Titulo seccion+++++++--> 
+&amp;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">quot;</h2><!--+++++++Titulo seccion+++++++--> 
+&quot;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">apos;</h2><!--+++++++Titulo seccion+++++++--> 
+&apos;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">cent;</h2><!--+++++++Titulo seccion+++++++--> 
+&cent;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">pound;</h2><!--+++++++Titulo seccion+++++++--> 
+&pound;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">yen;</h2><!--+++++++Titulo seccion+++++++--> 
+&yen;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">euro;</h2><!--+++++++Titulo seccion+++++++--> 
+&euro;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">copy;</h2><!--+++++++Titulo seccion+++++++--> 
+&copy;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">reg;</h2><!--+++++++Titulo seccion+++++++--> 
+&reg;
+</br>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">marcas diacriticas</h2><!--+++++++Titulo seccion+++++++--> 
+<!--MARCAS DIACRITICAS-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">a&</h2><!--+++++++Titulo seccion+++++++-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">#768</h2><!--+++++++Titulo seccion+++++++-->  
+a&#768;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">#769</h2><!--+++++++Titulo seccion+++++++-->  
+a&#769;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">#770</h2><!--+++++++Titulo seccion+++++++-->  
+a&#770;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">#771</h2><!--+++++++Titulo seccion+++++++-->  
+a&#771;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">#768</h2><!--+++++++Titulo seccion+++++++-->  
+O&#768;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">#769</h2><!--+++++++Titulo seccion+++++++-->  
+O&#769;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">#770</h2><!--+++++++Titulo seccion+++++++-->  
+O&#770;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">#771</h2><!--+++++++Titulo seccion+++++++-->  
+O&#771;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">algunos simbolos matematicos</h2><!--+++++++Titulo seccion+++++++-->  
+<!--algunos simbolos matematicos compatibles con html-->
+</br>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">&</h2><!--+++++++Titulo seccion+++++++-->  
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">forall;</h2><!--+++++++Titulo seccion+++++++-->  
+&forall;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">exist;</h2><!--+++++++Titulo seccion+++++++-->  
+&exist;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">empty;</h2><!--+++++++Titulo seccion+++++++-->  
+&empty;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">nabla;</h2><!--+++++++Titulo seccion+++++++-->  
+&nabla;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">isin;</h2><!--+++++++Titulo seccion+++++++-->  
+&isin;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">notin;</h2><!--+++++++Titulo seccion+++++++-->  
+&notin;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">ni;</h2><!--+++++++Titulo seccion+++++++-->  
+&ni;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">prod;</h2><!--+++++++Titulo seccion+++++++-->  
+&prod;
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">sum;</h2><!--+++++++Titulo seccion+++++++-->  
+&sum;
+</span>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">FORMULARIOS</h2><!--+++++++Titulo seccion+++++++-->  
+<!--FORMS-->
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">form br 2 input type text name= xxxxx</h2><!--+++++++Titulo seccion+++++++-->  
+<!--ENTRADA DE TEXTO-->
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasisDos">form 3 input type radio name=gender value= xxxx</h2><!--+++++++Titulo seccion+++++++-->  
+<!--ENTRADA DE BOTON DE RADIO-->
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br>
+</form>
+ 
+<!--+++++++Titulo seccion++++++++++--><h2 class="enfasis">Envio de datos</h2><!--+++++++Titulo seccion+++++++-->
+<!--El controlador de formulario suele ser una página de servidor con un script para procesar datos de entrada.-->
+  <form action="/action_page.php" target="_blank" method="get"> <!--method="post"--> 
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+     <!--BOTON ENVIAR--> <!--<input type="submit">define un botón para enviar los datos del formulario a un controlador de formulario -->
+    <input type="submit" value="Submit">
+  </form>
+
+<!--ATRIBUTO DE ACCION--> <!--El action atributo define la acción a realizar cuando se envía el formulario.
+
+Normalmente, los datos del formulario se envían a una página web en el servidor cuando el usuario hace clic en el botón Enviar.
+
+En el ejemplo anterior, los datos del formulario se envían a una página en el servidor llamada "/action_page.php".
+ Esta página contiene un script del lado del servidor que maneja los datos del formulario:
+Si actionse omite el atributo, la acción se establece en la página actual.-->
+
+<!--ATRIBUTO TARGET--> <!--El targetatributo especifica si el resultado enviado se abrirá en una nueva pestaña del navegador, un marco o en la ventana actual.
+
+El valor predeterminado es " _self", lo que significa que el formulario se enviará en la ventana actual.
+
+Para abrir el resultado del formulario en una nueva pestaña del navegador, use el valor " _blank":-->
+
+<!--El atributo del método--> <!--El methodatributo especifica el método HTTP ( GET o POST ) 
+  que se utilizará al enviar los datos del formulario:-->
+
+<!--METODO GET-->
+  <!--El método predeterminado al enviar datos del formulario es GET.
+
+  Sin embargo, cuando se utiliza GET, los datos del formulario enviado serán visibles en el campo de dirección de la página :-->
+    <!--Notas sobre GET:
+
+Agrega datos de formulario a la URL en pares de nombre / valor
+La longitud de una URL es limitada (2048 caracteres)
+¡Nunca use GET para enviar datos confidenciales! (será visible en la URL)
+Útil para envíos de formularios donde un usuario desea marcar el resultado
+GET es mejor para datos no seguros, como cadenas de consulta en Google-->
+
+  <!--METODO POST-->
+  <!--Utilice siempre POST si los datos del formulario contienen información confidencial o personal. El método POST no muestra los datos del formulario enviado en el campo de dirección de página.
+
+Notas sobre POST:
+
+POST no tiene limitaciones de tamaño y puede usarse para enviar grandes cantidades de datos.
+Los envíos de formularios con POST no pueden marcarse-->
+
+  <!--ATRIBUTO NAME-->
+  <!--Cada campo de entrada debe tener un nameatributo para ser enviado.
+
+Si namese omite el atributo, los datos de ese campo de entrada no se enviarán en absoluto.
+
+Este ejemplo solo enviará el campo de entrada "Apellido":-->
+
+  <!--FIELDSET Y LEGEND-->
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personal information:</legend>
+      First name:<br>
+      <input type="text" name="firstname" value="Mickey"><br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+<br>
+  <!--ELEMENTOS DE FORM-->
+
+  <!--INPUT-->
+  <input name="firstname" type="text"> <!--Si typese omite el atributo, el campo de entrada obtiene el tipo predeterminado: "texto".-->
+<br/>
+  <!--SELECT-->
+  <select name="cars">
+    <option value="volvo">Volvo</option> 
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+ <br/>
+
+<!--PRESELECCION
+-->
+
+ <h2>Pre-selected Option</h2>
+ <p>You can preselect an option with the selected attribute.</p>
+ 
+ <form action="/action_page.php">
+   <select name="cars">
+     <option value="volvo">Volvo</option>
+     <option value="saab">Saab</option>
+     <option value="fiat" selected>Fiat</option> <!--preseleccion-->
+     <option value="audi">Audi</option>
+   </select>
+   <br><br>
+   <input type="submit">
+ </form>
+<!--VALORES VISIBLES-->
+  <br>
+  <h2>Valores visibles</h2>
+ <p>You can preselect an option with the selected attribute.</p>
+ 
+ <form action="/action_page.php">
+   <select name="cars" size="3">
+     <option value="volvo">Volvo</option>
+     <option value="saab">Saab</option>
+     <option value="fiat" selected>Fiat</option> <!--preseleccion-->
+     <option value="audi">Audi</option>
+     <option value="audi">Audi2</option>
+     <option value="audi">Audi3</option>
+     <option value="audi">Audi4</option>
+   </select>
+   <br><br>
+   <input type="submit">
+ </form>
+  
+
+ <!--SELECCION MULTIPLE-->
+ <h2>SELECCION MULTIPLE</h2>
+ <p>Use the size attribute to specify the number of visible values.</p>
+ 
+ <form action="/action_page.php">
+  <br><br>
+  
+ <select name="cars" size="4" multiple> <!--USAR CTRONL PARA MARCAR VARIOS EN DESORDEN O SHIF PARA MARCAR VARIOS EN ORDEN-->
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+  <option value="audi">Audi</option>
+     <option value="audi">Audi2</option>
+     <option value="audi">Audi3</option>
+     <option value="audi">Audi4</option>
+</select>
+<input type="submit">
+</form>
+  <!--TEXT AREA-->
+  <h3>Text Area</h3>
+  <form>
+  <textarea name="message" rows="10" cols="30"> <!--El rowsatributo especifica el número visible de líneas en un área de texto.
+
+    El colsatributo especifica el ancho visible de un área de texto.
+    
+    Así es como se mostrará el código HTML anterior en un navegador:-->
+    The cat was playing in the garden.
+    </textarea>
+  <br>
+  </form>
+
+  <!--text area--><!--using css-->
+  <form>
+  <textarea name="message" style="width:200px; height:450px;"> 
+    The cat was playing in the garden.
+    </textarea>
+  </form>
+  <!--ELEMENTO BUTTON-->
+
+  <h2>The button Element</h2>
+
+  <button type="button" onclick="alert('Hello World!')">Click Me!</button> <!--Nota: Especifique siempre el atributo de tipo para el elemento del botón. Los diferentes navegadores pueden usar diferentes tipos predeterminados para el elemento del botón.-->
+
+  <!--Elementos de formulario HTML5-->
+
+  <!--DATA LIST--> <!--El <datalist>elemento especifica una lista de opciones predefinidas para un <input>elemento.
+
+Los usuarios verán una lista desplegable de las opciones predefinidas a medida que ingresan datos.
+
+El listatributo del <input>elemento, debe referirse al idatributo del <datalist>elemento.-->
+  <h2>The datalist Element</h2>
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+  <!--ELEMENTO OUTPUT-->
+  <!--El <output>elemento representa el resultado de un cálculo (como el realizado por un script).-->
+  <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<!--TIPOS DE ENTRADA-->
+  <h3>TIPOS DE ENTRADA</h3>
+
+  <!--TEXTO--> <br>
+  <H4>TEXTO</H4>
+  <form>
+    First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  </form>
+
+<!--CONTRASEÑA--><br>
+<H4>CONTRASEÑA</H4>
+<form>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw" style="background-color:skyblue;">
+</form>
+<!--ENVIAR--><br> <!--<input type="submit">define un botón para enviar datos de formulario a un controlador de formulario .
+
+El controlador de formulario suele ser una página de servidor con un script para procesar datos de entrada.
+
+El controlador de formulario se especifica en el action atributo del formulario :-->
+<H4>ENVIAR</H4>
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="enviar este formulario" style="background-color:skyblue;"> <!--si omitimos el value del boton submit el boton tendra un texto predeterminado -->
+</form>
+  <!--RESTABLECER TIPO DE ENTRADA-->
+<H4>RESTABLECER TIPO DE ENTRADA</H4>
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" style="background-color: yellow;">
+</form>
+
+  <!--RADIO--> <!--Los botones de opción le permiten al usuario seleccionar SOLO UNA de un número limitado de opciones:-->
+  <H4>RADIO</H4> 
+  <form>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+  </form>
+  <!--CASILLA DE VERIFICACION O CHECKBOX-->
+  <H4>CASILLA DE VERIFICACION</H4>
+  <form>
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a 1<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a 1.5<br>
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a 2<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a 3<br>
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a 4<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a 5<br>
+  </form>
+  <!--BOTON TIPO ENTRADA-->
+  <input type="button" onclick="alert('LOS DATOS SE HUBIERAN ENVIADO PERO FALTA QUE SE ENVIE A UNA PAGINA DEL SERVIDOR LO CUAL SE CONFIGURA DESPUES!')" value="Click Me PARA ENVIAR!">
+
+
+  <!--TIPOS DE ENTRADA HTML 5-->
+
+  <h4>color</h4> <!--Se <input type="color">utiliza para campos de entrada que deben contener un color.
+
+    Dependiendo de la compatibilidad del navegador, puede aparecer un selector de color en el campo de entrada.-->
+  <form>
+    Select your favorite color:
+    <input type="color" name="favcolor">
+  </form>
+
+  <h4>Fecha</h4> <!--El <input type="date">se utiliza para los campos de entrada que deben contener una fecha.
+
+    Dependiendo del soporte del navegador, un selector de fecha puede aparecer en el campo de entrada.
+  También puede usar los atributos miny maxpara agregar restricciones a las fechas:-->
+  <form>
+    Birthday:
+    <input type="date" name="bday">
+  </form>
+
+  <h4>Fecha con restricciones</h4>
+
+  <form>
+    Enter a date before 1980-01-01:
+    <input type="date" name="bday" max="1979-12-31"><br>
+    Enter a date after 2000-01-01:
+    <input type="date" name="bday" min="2000-01-02"><br>
+    <input type="submit">
+  </form>
+
+  <h4>Fecha-hora-local</h4> <!--El <input type="datetime-local">especifica un campo de entrada de fecha y hora, sin zona horaria.
+
+    Dependiendo del soporte del navegador, un selector de fecha puede aparecer en el campo de entrada.-->
+    <form>
+      Birthday (date and time):
+      <input type="datetime-local" name="bdaytime">
+      <input type="submit">
+    </form>
+
+  <h4>Correo electronico</h4><!--Se <input type="email">utiliza para campos de entrada que deben contener una dirección de correo electrónico.
+
+    Dependiendo del soporte del navegador, la dirección de correo electrónico se puede validar automáticamente cuando se envía.
+    
+    Algunos teléfonos inteligentes reconocen el tipo de correo electrónico y agregan ".com" al teclado para que coincida con la entrada de correo electrónico.-->
+    <form>
+      E-mail:
+      <input type="email" name="email">
+      <input type="submit">
+    </form>
+
+  <h4>Archivo</h4> <!--La <input type="file"> define un campo de selección de archivo y un botón "Examinar" para la carga de archivos.-->
+  <form>
+    Select a file: <input type="file" name="myFile">
+    <input type="submit">
+    
+  </form>
+  
+  <h4>Entrada MES</h4> <!--El <input type="month">permite al usuario seleccionar un mes y año.
+
+    Dependiendo del soporte del navegador, un selector de fecha puede aparecer en el campo de entrada.-->
+  <form>
+    Birthday (month and year):
+    <input type="month" name="bdaymonth">
+  </form>
+
+  <h4> Numero</h4> <!--El <input type="number">define un campo de entrada numérico .
+
+    También puede establecer restricciones sobre qué números se aceptan.
+    
+    El siguiente ejemplo muestra un campo de entrada numérico, donde puede ingresar un valor del 1 al 5:-->
+
+    <form>
+      Quantity (between 1 and 5):
+      <input type="number" name="quantity" min="1" max="5">
+    </form>
+  <!--ALGUNAS RESTRICCIONES DE ENTRADAS-->
+  <br>
+  <table class=" notranslate">
+    <tbody><tr>
+    <th style="width:20%">Attribute</th>
+    <th>Description</th>
+    </tr>
+    <tr>
+    <td>checked</td>
+    <td>Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")</td>
+    </tr>
+    <tr>
+    <td>disabled</td>
+    <td>Specifies that an input field should be disabled</td>
+    </tr>
+    <tr>
+    <td>max</td>
+    <td>Specifies the maximum value for an input field</td>
+    </tr>
+    <tr>
+    <td>maxlength</td>
+    <td>Specifies the maximum number of character for an input field</td>
+    </tr>
+    <tr>
+    <td>min</td>
+    <td>Specifies the minimum value for an input field</td>
+    </tr>
+    <tr>
+    <td>pattern</td>
+    <td>Specifies a regular expression to check the input value against</td>
+    </tr>
+    <tr>
+    <td>readonly</td>
+    <td>Specifies that an input field is read only (cannot be changed)</td>
+    </tr>
+    <tr>
+    <td>required</td>
+    <td>Specifies that an input field is required (must be filled out)</td>
+    </tr>
+    <tr>
+    <td>size</td>
+    <td>Specifies the width (in characters) of an input field</td>
+    </tr>
+    <tr>
+    <td>step</td>
+    <td>Specifies the legal number intervals for an input field</td>
+    </tr>
+    <tr>
+    <td>value</td>
+    <td>Specifies the default value for an input field</td>
+    </tr>
+    </tbody></table>
+  <br>
+  <h4>un campo de entrada numérico, donde puede ingresar un valor de 0 a 100, en pasos de 10</h4>
+  <form>
+    Quantity:
+    <input type="number" name="points" min="0" max="100" step="10" value="30">
+  </form>
+
+  <h4>RANGO</h4><!--El <input type="range">define un control para la introducción de un número cuyo valor exacto no es importante (como un control deslizante). Rango por defecto es de 0 a 100. Sin embargo, se puede establecer restricciones en lo que los números son aceptados con el min, maxy stepatributos:-->
+  <form>
+    <input type="range" name="points" min="0" max="10">
+  <!--otro tipo de rango-->
+    <form name="registrationForm">
+      <input type="range" name="ageInputName" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value">
+      <output name="ageOutputName" id="ageOutputId">24</output>
+   </form>
+  <!--otro con editable-->
+  <form>
+    <input type="range" name="amountRange" min="0" max="20" value="0" oninput="this.form.amountInput.value=this.value" />
+    <input type="number" name="amountInput" min="0" max="20" value="0" oninput="this.form.amountRange.value=this.value" />
+</form>
+  </form>
+
+  <h4>Busqueda</h4> <!--El <input type="search">se utiliza para campos de búsqueda (un campo de búsqueda se comporta como un campo de texto normal).-->
+  <form>
+    Search Google:
+    <input type="search" name="googlesearch">
+  <input type="submit">
+  </form>
+
+  <h4>TEL</h4>
+  <form>
+    Telephone:
+    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <!--Format: 123-45-678-->
+    <input type="submit">
+  </form>
+
+  <h4>TIEMPO</h4> <!--El <input type="time">permite al usuario seleccionar un tiempo (sin zona horaria).
+
+    Dependiendo del soporte del navegador, un selector de tiempo puede aparecer en el campo de entrada.-->
+    <form>
+      Select a time:
+      <input type="time" name="usr_time">
+    </form>
+
+  <H4>URL</H4> <!--Se <input type="url">usa para campos de entrada que deben contener una dirección URL.
+
+    Dependiendo de la compatibilidad del navegador, el campo de la URL se puede validar automáticamente cuando se envía.
+    
+    Algunos teléfonos inteligentes reconocen el tipo de url y agregan ".com" al teclado para que coincida con la entrada de url.-->
+    <form>
+      Add your homepage:
+      <input type="url" name="homepage">
+  <input type="submit">
+    </form>
+  
+    <h4>SEMANA</h4> <!--El <input type="week">permite al usuario seleccionar una semana y el año.
+
+      Dependiendo del soporte del navegador, un selector de fecha puede aparecer en el campo de entrada.-->
+      <form>
+        Select a week:
+        <input type="week" name="week_year">
+      </form>
+
+
+
+
+  <!---->
+</body>
+
+</html>
